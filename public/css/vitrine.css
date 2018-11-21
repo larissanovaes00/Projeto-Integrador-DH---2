@@ -1,7 +1,23 @@
 .card-text{
   font-family: 'Hind Guntur', sans-serif;
+  text-align: center;
 }
 
 img.card-img-top{
   margin-top: 5px !important;
+}
+
+#preco{
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: darkred;
+}
+
+.btn-group{
+  margin: 0 auto !important;
+}
+
+a.page-link{
+  color: inherit;
 }

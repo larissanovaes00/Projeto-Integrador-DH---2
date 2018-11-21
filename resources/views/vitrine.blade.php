@@ -9,6 +9,7 @@
                     <img class="card-img-top img-fluid" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -24,6 +25,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -39,6 +41,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/2.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -54,6 +57,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/3.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -69,6 +73,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/3.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -84,6 +89,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/4.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -99,6 +105,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/4.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -114,6 +121,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/5.jpeg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -129,6 +137,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/5.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -144,6 +153,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/6.jpeg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -159,6 +169,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/6.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -174,6 +185,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/7.jpeg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -189,6 +201,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/7.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -204,6 +217,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/8.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -219,6 +233,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/8.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -234,6 +249,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/9.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -249,6 +265,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/9.png'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -264,6 +281,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/10.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -279,6 +297,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/11.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -294,6 +313,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/12.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
@@ -309,6 +329,7 @@
                     <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 120px; width: 120px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
                     <div class="card-body">
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
