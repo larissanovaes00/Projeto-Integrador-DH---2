@@ -1,6 +1,6 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     
-    <div class="carousel-inner">
+    <div id="banner" class="carousel-inner">
 
         <div class="carousel-item active">
             <img class="d-block w-100" src="<?php echo asset('img/banner/foto2.jpg'); ?>" alt="First slide">
@@ -24,6 +24,10 @@
             <span class="sr-only">Next</span>
         </a>
 
+    </div>
+
+    <div id="foto-reponsiva">
+        <img id="foto-fixa" class="img-fluid" src="<?php echo asset('img/banner/banner-responsivo/101.jpeg'); ?>">
     </div>
 
 </div>
