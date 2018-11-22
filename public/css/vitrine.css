@@ -1,6 +1,7 @@
 .card-text{
   font-family: 'Hind Guntur', sans-serif;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 img.card-img-top{
@@ -8,7 +9,7 @@ img.card-img-top{
 }
 
 #preco{
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   text-align: center;
   font-weight: bold;
   color: darkred;
@@ -20,4 +21,17 @@ img.card-img-top{
 
 a.page-link{
   color: inherit;
+  font-size:1.5rem;
+}
+
+#botao-vitrine{
+  font-size: 1.5rem;
+  border-color: darkgrey;
+}
+
+.page-link:not(:disabled):not(.disabled){
+  color: #333 !important;
+  font-size:1.5rem !important;
+  font-family: 'Hind Guntur', sans-serif !important;
+
 }

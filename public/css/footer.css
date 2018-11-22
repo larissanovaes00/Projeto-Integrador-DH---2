@@ -2,6 +2,10 @@
     background-color: #3c3d41;
     color: white;
     padding-top: 30px;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: 'Hind Guntur', sans-serif; 
+
 }
 
 #myFooter .footer-copyright {
@@ -94,52 +98,9 @@
     margin: 0 auto;
     margin-top: 10px;
     line-height: 25px;
+    font-size:1.5rem;
 }
 
-@media screen and (max-width: 767px) {
-    #myFooter {
-        text-align: center;
-    }
-}
-
-
-html{
-    height: 100%;
-}
-
-body{
-    display: flex;
-    display: -webkit-flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    height: 100%;
-}
-
-.content{
-   flex: 1 0 auto;
-   -webkit-flex: 1 0 auto;
-   min-height: 200px;
-}
-
-#myFooter{
-   flex: 0 0 auto;
-   -webkit-flex: 0 0 auto;
-}
-
-.footer-copyright{
-    margin-top: 10px;
-    font-family: 'Hind Guntur', sans-serif; 
-
-}
-
-
-@media only screen and (max-width : 576px) {
-    
-    #logo {
-        width:50%;
-    }
-}
-
-.container{
-  font-family: 'Hind Guntur', sans-serif; 
+#logo-footer{
+    margin-top:30px;
 }

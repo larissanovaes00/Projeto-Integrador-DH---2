@@ -12,8 +12,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                                <button id="botao-vitrine" type="button" class="btn btn-outline-secondary">Detalhes</button>
+                                <button id="botao-vitrine"type="button" class="btn btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -28,8 +28,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -44,8 +44,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -60,8 +60,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -76,8 +76,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -92,8 +92,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -108,8 +108,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -124,8 +124,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -156,8 +156,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -172,8 +172,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -188,8 +188,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -204,8 +204,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -220,8 +220,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -236,8 +236,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -252,8 +252,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -268,8 +268,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -284,8 +284,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -300,8 +300,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -316,8 +316,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
@@ -332,8 +332,8 @@
                         <h4 id="preco">49,99</h4>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
+                            <button id="botao-vitrine" type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button>
+                            <button id="botao-vitrine"type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
                             </div>
                         </div>
                     </div>
