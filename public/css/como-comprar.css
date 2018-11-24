@@ -6,13 +6,14 @@
   display: inline-block;
   padding: 25px 0;
   background-color: #212121;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .icon {
   /* height: 100%; */
   /* background-color: #212121; */
-  margin-left: 10px;
-  display: inline-block;
+  display: none;
 }
 
 .texts {
@@ -29,5 +30,28 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .icon {
     display: none;
+  }
+}
+
+/* Desktop media querie */
+@media (min-width: 1025px) {
+  .vantagem {
+    text-align: left;
+  }
+
+  .centralizar {
+    display: table;
+    float: none;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .icon {
+    margin-left: 10px;
+    display: inline-block;
+  }
+
+  .texts {
+    margin-left: 25px;
   }
 }
