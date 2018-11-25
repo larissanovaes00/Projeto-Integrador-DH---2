@@ -1,0 +1,62 @@
+.bottom-page {
+  background-color: #009fae;
+}
+
+.redes-sociais {
+  color: #fff;
+}
+
+.redes-sociais h5 {
+  display: none;
+}
+
+.sense-social {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sense-social > li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.cnpj {
+  text-align: center;
+  color: #efefef;
+  padding: 1.5em;
+  font-size: 0.7em;
+}
+
+.logotipo-sense {
+  width: 100%;
+  float: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 1.5em;
+}
+
+/* Tablet media querie */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .redes-sociais {
+    padding-top: 25px;
+  }
+  .cnpj {
+    font-size: 1em;
+  }
+}
+
+/* Desktop media querie */
+@media (min-width: 1025px) {
+  .redes-sociais {
+    padding-top: 25px;
+  }
+  .cnpj {
+    font-size: 1.2em;
+  }
+}

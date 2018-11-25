@@ -4,15 +4,13 @@
 
 .vantagem {
   display: inline-block;
-  padding: 25px 0;
+  padding: 10px 0;
   background-color: #212121;
   margin: 0 auto;
   text-align: center;
 }
 
 .icon {
-  /* height: 100%; */
-  /* background-color: #212121; */
   display: none;
 }
 
