@@ -1,37 +1,50 @@
-.card-text{
-  font-family: 'Hind Guntur', sans-serif;
+.titulo-secao {
+  text-transform: uppercase;
   text-align: center;
-  font-size: 1.5rem;
+  padding: 20px;
+  color: #045b5b;
 }
 
-img.card-img-top{
-  margin-top: 5px !important;
+.card {
+  border: none !important;
 }
 
-#preco{
-  font-size: 2.0rem;
+.card-text {
+  font-family: "Hind Guntur", sans-serif;
+  text-align: center;
+  /* font-size: 1.5rem; */
+  margin: 0;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body > h6 {
+  text-transform: uppercase;
+}
+
+.card-body > p {
+  line-height: 20px;
+  margin: 0;
+}
+
+.infos-precos {
+  margin-top: 8px;
+}
+
+.preco-antigo {
+  font-weight: 900;
+  text-decoration: line-through;
+}
+
+.btn-comprar {
+  margin: 20px 0;
+}
+
+#preco {
   text-align: center;
   font-weight: bold;
-  color: darkred;
-}
-
-.btn-group{
-  margin: 0 auto !important;
-}
-
-a.page-link{
-  color: inherit;
-  font-size:1.5rem;
-}
-
-#botao-vitrine{
-  font-size: 1.5rem;
-  border-color: darkgrey;
-}
-
-.page-link:not(:disabled):not(.disabled){
-  color: #333 !important;
-  font-size:1.5rem !important;
-  font-family: 'Hind Guntur', sans-serif !important;
-
+  color: #009fae;
+  margin: 0;
 }

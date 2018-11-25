@@ -27,7 +27,7 @@
 
         @include('comoComprar')
 
-        @include('vitrine')
+        @include('produtosDestaqueHome')
 
         @include('footer')
 
