@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="<?php echo asset('css/banner.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/como-comprar.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/vitrine.css');?>" />
+        <link rel="stylesheet" href="<?php echo asset('css/novidades.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/footer.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/bottom.css');?>" />
         <link href="<?php echo asset('bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet" />
@@ -28,6 +29,8 @@
         @include('comoComprar')
 
         @include('produtosDestaqueHome')
+
+        @include('novidades')
 
         @include('footer')
 

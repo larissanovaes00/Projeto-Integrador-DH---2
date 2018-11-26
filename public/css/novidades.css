@@ -1,0 +1,33 @@
+.infos-novidades {
+  background-color: #212121;
+  color: #fff;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-novidades > p {
+  margin-bottom: 0 !important;
+}
+
+.email-box {
+  background-color: #009fae;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 200px !important;
+}
+
+.form-row {
+  margin-left: 30px;
+}
+
+/* Desktop media querie */
+@media (min-width: 1025px) {
+  .email-box {
+    padding-left: 200px !important;
+  }
+}
