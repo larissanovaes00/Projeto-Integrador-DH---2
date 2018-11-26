@@ -1,5 +1,6 @@
 body {
   background-color: #dceeef !important;
+  background-image: url("/img/background-admin.svg");
 }
 
 .titulo-pagina {
@@ -8,7 +9,8 @@ body {
 }
 
 .basic-info,
-.product-pictures {
+.images-product,
+.aditional-infos {
   padding: 15px;
   background-color: #fff;
   border-radius: 15px;

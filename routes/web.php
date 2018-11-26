@@ -35,6 +35,10 @@ Route::get('/footer', function () {
     return view('footer');
 });
 
-Route::get('/cadastrar', function () {
+Route::get('/senseadmin', function () {
     return view('admin/cadastrar-produto');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

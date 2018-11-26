@@ -9,3 +9,7 @@
 .header-infos {
   margin-bottom: 24px;
 }
+
+.user-controls {
+  margin: 0 !important;
+}
