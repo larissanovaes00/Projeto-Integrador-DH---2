@@ -1,0 +1,17 @@
+body {
+  background-color: #dceeef !important;
+}
+
+.titulo-pagina {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.basic-info,
+.product-pictures {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px #406466;
+  margin-bottom: 2em;
+}

@@ -32,6 +32,8 @@
 
         @include('novidades')
 
+         @include('produtosMaquiagem')
+
         @include('footer')
 
         @include('bottom')

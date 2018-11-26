@@ -34,3 +34,7 @@ Route::get('/header', function () {
 Route::get('/footer', function () {
     return view('footer');
 });
+
+Route::get('/cadastrar', function () {
+    return view('admin/cadastrar-produto');
+});

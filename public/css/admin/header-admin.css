@@ -1,0 +1,17 @@
+.loja-header {
+  background-color: #343a40;
+}
+
+.logotipo {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.user-controls {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
