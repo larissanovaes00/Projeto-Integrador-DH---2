@@ -7,7 +7,8 @@
 
         <!-- User controls -->
         <div class="user-controls col-12 col-md-6 col-lg-6 col-xl-6">
-            <button class="btn btn-outline-light">Sair</button>
+            <button class="btn btn-outline-light">Olá, Nome usuario</button>
+            <button class="btn btn-danger">Sair</button>
         </div>
         
     </div>
