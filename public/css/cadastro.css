@@ -1,0 +1,12 @@
+
+.row.justify-content-center{
+    margin-top: -2%;
+}
+
+body{
+    font-size: 1.0rem;
+}
+
+.card-header{
+    text-align: center;
+}

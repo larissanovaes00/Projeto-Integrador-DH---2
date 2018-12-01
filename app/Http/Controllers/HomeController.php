@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\pagsController;
+use App\Http\Controllers\SubcategoriaController;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // NAVEGACAO
+        $navegacao = new SubcategoriaController();
+        $categorias = $navegacao->getCategorias();
+
+        // Popular DESTAQUES
+        $quatroProdutos = new pagsController();
+        $destaqueProdutos = $quatroProdutos->produtosDestaque();
+        
+        return view('home')
+            ->with('navbar', $categorias)
+            ->with('destaqueProdutos', $destaqueProdutos);
     }
 }

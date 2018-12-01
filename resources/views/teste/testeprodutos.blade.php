@@ -20,29 +20,35 @@
     
     <body>
 
-        @include('header')
+        @foreach($produtos as $produto)
+            {{$produto["nome"]}}
+            <br>
+            @foreach($produto["marca"] as $marca)
+                {{$marca["marca"]}}
+            @endforeach
+            <br>
+            {{$produto["preco"]}}
+            <br>
+            {{$produto["preco_antigo"]}}
+            <br>
+            {{$produto["parcelado"]}}
+            <br>
+            @foreach($produto["imagens"][0] as $caminho)
+                {{$caminho["caminho_imagem"]}}
+                <img src="{{ asset("storage/produtos/{$produto["imagens"][0["caminho_imagem"]}") }}" alt="{{ $caminho["caminho_imagem"] }}" style="height: 200px; width: 200px; display: block; margin: 0 auto;">
+                <br>
+            @endforeach
+            <br>
+            <br>
+        @endforeach
 
-        @include('navbar')
+</div>
 
-        @include('banner')
-
-        @include('comoComprar')
-
-        @include('produtosDestaqueHome')
-
-        @include('novidades')
-
-         @include('produtosMaquiagem')
-
-        @include('footer')
-
-        @include('bottom')
-         
+</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="<?php echo asset ('bootstrap/js/bootstrap.min.js'); ?>" > </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     </body>
-
 </html>

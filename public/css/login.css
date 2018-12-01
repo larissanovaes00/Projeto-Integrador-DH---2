@@ -1,0 +1,16 @@
+#navbar{
+    background-color:#163a39 !important ; 
+}
+
+body{
+    background-color: #045b5b !important;
+    font-size: 1.0rem;
+}
+
+a.nav-link{
+    color:white !important;
+}
+
+main.py-4{
+    margin-top: 7%;
+}

@@ -3,17 +3,19 @@
         <h3>Destaques</h3>
     </div>
     <div class="row">  
-
+        @foreach($destaqueProdutos as $produto)
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="card box-shadow">
-                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
+                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="{{ asset("storage/produtos/{$produto["imagens"][0]["caminho_imagem"]}") }}" data-holder-rendered="true">
                 <div class="card-body">
-                    <h6>Marca</h6>
-                    <p>Nome do produto pode ocupar mais de uma linha</p>
+                    @foreach($produto["marca"] as $marca)
+                        <small>{{$marca["marca"]}}</small>
+                    @endforeach
+                    <h6>{{$produto["nome"]}}</h6>
                     <div class="infos-precos">
-                        <small class="text-muted preco-antigo">R$ 70,00</small>
-                        <h4 id="preco">R$ 50,00</h4>
-                        <small class="text-muted"> 2X de 25,00</small>
+                        <small class="text-muted preco-antigo">R${{$produto["preco_antigo"]}}</small>
+                        <h4 id="preco">{{$produto["preco"]}}</h4>
+                        <small class="text-muted"> 2X de {{$produto["parcelado"]}},00</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center btn-comprar">
                         <button class="btn btn-info btn-lg btn-block">Comprar</button>
@@ -21,61 +23,7 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card box-shadow">
-                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
-                <div class="card-body">
-                    <h6>Marca</h6>
-                    <p>Nome do produto pode ocupar mais de uma linha</p>
-                    <div class="infos-precos">
-                        <small class="text-muted preco-antigo">R$ 70,00</small>
-                        <h4 id="preco">R$ 50,00</h4>
-                        <small class="text-muted"> 2X de 25,00</small>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center btn-comprar">
-                        <button class="btn btn-info btn-lg btn-block">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card box-shadow">
-                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
-                <div class="card-body">
-                    <h6>Marca</h6>
-                    <p>Nome do produto pode ocupar mais de uma linha</p>
-                    <div class="infos-precos">
-                        <small class="text-muted preco-antigo">R$ 70,00</small>
-                        <h4 id="preco">R$ 50,00</h4>
-                        <small class="text-muted"> 2X de 25,00</small>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center btn-comprar">
-                        <button class="btn btn-info btn-lg btn-block">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
-            <div class="card box-shadow">
-                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="<?php echo asset('img/vitrine/1.jpg'); ?>" data-holder-rendered="true">
-                <div class="card-body">
-                    <h6>Marca</h6>
-                    <p>Nome do produto pode ocupar mais de uma linha</p>
-                    <div class="infos-precos">
-                        <small class="text-muted preco-antigo">R$ 70,00</small>
-                        <h4 id="preco">R$ 50,00</h4>
-                        <small class="text-muted"> 2X de 25,00</small>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center btn-comprar">
-                        <button class="btn btn-info btn-lg btn-block">Comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 
 </div>
