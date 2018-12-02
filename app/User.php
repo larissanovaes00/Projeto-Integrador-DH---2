@@ -11,6 +11,14 @@ class User extends Authenticatable
     public $timestamps = false;
     protected $primaryKey= 'id_cliente';
 
+    const ADMIN_TYPE = 1;
+    const DEFAULT_TYPE = 0;
+    
+    public function tipoUsuario()
+    {
+        return $this->type === self::ADMIN_TYPE;
+    }
+
     use Notifiable;
 
     /**

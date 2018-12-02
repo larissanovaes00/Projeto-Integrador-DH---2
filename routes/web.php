@@ -35,14 +35,21 @@ Route::get('/footer', function () {
     return view('footer');
 });
 
-Route::get('/senseadmin', 'produtoController@cadastroProduto');
-Route::post('/senseadmin', 'produtoController@adicionarProduto');
+// Route::get('/senseadmin', 'produtoController@cadastroProduto');
+// Route::post('/senseadmin', 'produtoController@adicionarProduto');
 
 Route::get('/testeprodutos', 'pagsController@produtosDestaque');
 
 Route::get('/exibir', 'SubcategoriaController@exibir');
 Route::get('/exibirCat/{id}', 'CategoriaController@exibirPorId');
 
+Route::get('/home', 'HomeController@index');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/administrador', 'adminController@admin')
+    ->middleware('userType');
+    
+Route::get('/logoutadmin', 'adminController@logout');
+
+Route::get('/sair', 'LoginController@logout');
