@@ -6,13 +6,17 @@
         </div>
         <!-- Logotype -->
         <div class="logotipo col-12 col-md-6 col-lg-6 col-xl-6">
-            <a href="#"><img src="img/logotipo_sense.svg" alt="Logotipo loja sense"></a>
+            <a href="/home"><img src="/img/logotipo_sense.svg" alt="Logotipo loja sense"></a>
         </div>
 
         <!-- User controls -->
         <div class="user-controls col-12 col-md-6 col-lg-6 col-xl-6">
-            <a href="#"><i class="fas fa-user-circle fa-2x"></i></a>
             <a href="#"><i class="fas fa-shopping-bag fa-2x"></i></a>
+            @guest
+                <a class="entrar" href="{{ route('login') }}">Entrar</a>
+            @else
+            <a href="/profile" class="user-profile">Olá, {{ Auth::user()->name }}</i></a>
+            @endguest
         </div>
         
         <!-- Search box -->

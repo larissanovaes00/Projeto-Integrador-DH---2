@@ -57,6 +57,18 @@
   right: 35px;
 }
 
+.entrar,
+.user-profile {
+  color: #fff;
+  font-weight: 600;
+}
+
+.entrar:hover,
+.user-profile:hover {
+  text-decoration: none;
+  color: #efefef;
+}
+
 /* Tablet media querie */
 @media (min-width: 768px) and (max-width: 1024px) {
   .search-box {

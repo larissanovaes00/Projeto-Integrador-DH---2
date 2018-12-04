@@ -6,7 +6,10 @@
         @foreach($destaqueProdutos as $produto)
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
             <div class="card box-shadow">
-                <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="{{ asset("storage/produtos/{$produto["imagens"][0]["caminho_imagem"]}") }}" data-holder-rendered="true">
+                
+                <a href="produto/{{$produto['idproduto']}}">
+                    <img class="card-img-top img-fluid"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="{{ asset("storage/produtos/{$produto["imagens"][0]["caminho_imagem"]}") }}" data-holder-rendered="true">
+                </a>
                 <div class="card-body">
                     @foreach($produto["marca"] as $marca)
                         <small>{{$marca["marca"]}}</small>

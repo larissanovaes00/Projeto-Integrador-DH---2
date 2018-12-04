@@ -71,6 +71,6 @@ class produtoController extends Controller
             }
         }
 
-        return view('admin/cadastrado');
+        return redirect('/sucessocadastro');
     }
 }

@@ -1,0 +1,62 @@
+.prod-infos {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.prod-infos > h5 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.prod-infos > h1 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.prod-infos > h4 {
+  margin-bottom: 0.5em;
+}
+
+.comprar-produto {
+  margin-top: 2em;
+}
+
+.comprar-produto > .btn-lg {
+  padding: 0.7rem 3rem !important;
+}
+
+.prod-imgs {
+  margin: 1.5em 0;
+}
+
+.card-header {
+  background-color: transparent !important;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 1) !important; */
+  border-bottom: 1px solid rgba(224, 224, 224, 1) !important;
+  text-align: center !important;
+}
+
+.btn-link {
+  font-size: 1em !important;
+  color: #00878c !important;
+}
+
+.btn-link > i {
+  padding-left: 10px;
+}
+
+.saiba-mais > h3 {
+  margin: 0;
+}
+
+.saiba-mais {
+  background-color: #212121;
+  padding: 10px 0;
+}
+
+/* Desktop media querie */
+@media (min-width: 1025px) {
+  .saiba-mais {
+    padding: 50px 0;
+  }
+}

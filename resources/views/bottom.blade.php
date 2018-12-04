@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 col-sm-6 col-lg-6 col-xl-6 logotipo-sense">
             <div class="wrapper">
-                <img src="img/logotipo_sense.svg" alt="Logotipo Sense cosméticos">
+                <img src="/img/logotipo_sense.svg" alt="Logotipo Sense cosméticos">
             </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-6 col-xl-6 redes-sociais">

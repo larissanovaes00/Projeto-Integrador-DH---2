@@ -12,7 +12,7 @@ class pagsController extends Controller
 {
     public function produtosDestaque()
     {
-        $produtos = Produto::all();
+        $produtos = Produto::all()->take(4);
 
         $pagProdutos = array();
 
@@ -30,5 +30,31 @@ class pagsController extends Controller
         }   
 
         return $pagProdutos;
+    }
+
+    public function detalheProduto($id)
+    {
+        $produtoQuery = Produto::where('id_produto', $id)->first();
+
+        $produto = array(
+            'idproduto' => $produtoQuery->id_produto,
+            'marca' => $produtoQuery->marca,
+            'nome' => $produtoQuery->prod_nome,
+            'preco' => $produtoQuery->preco,
+            'preco_antigo' => $produtoQuery->preco + 20,
+            'parcelado' => $produtoQuery->preco / 2,
+            'imagens' => $produtoQuery->imagens->all(),
+            'descricao' => $produtoQuery->prod_descricao,
+            'modo_de_usar' => $produtoQuery->modo_de_usar,
+        );
+
+        return $produto;
+    }
+
+    public function pesquisarSubcategoria($subcategoria)
+    {
+        $subcategoriaQuery = Produto::where('id_subcategoria', $subcategoria);
+
+        
     }
 }

@@ -23,10 +23,6 @@ Route::get('/banner', function () {
     return view('banner');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
-
 Route::get('/header', function () {
     return view('header');
 });
@@ -35,21 +31,47 @@ Route::get('/footer', function () {
     return view('footer');
 });
 
-// Route::get('/senseadmin', 'produtoController@cadastroProduto');
-// Route::post('/senseadmin', 'produtoController@adicionarProduto');
+Route::get('/acesso', function () {
+    return view('acesso');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+
 
 Route::get('/testeprodutos', 'pagsController@produtosDestaque');
 
 Route::get('/exibir', 'SubcategoriaController@exibir');
 Route::get('/exibirCat/{id}', 'CategoriaController@exibirPorId');
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index')
+    ->name('home');
+
+Route::get('produto/{id}', 'detalheProdutoController@detalheProduto');
+
+Route::post('logout', 'LoginController@logout');
 
 Auth::routes();
 
-Route::get('/administrador', 'adminController@admin')
-    ->middleware('userType');
-    
-Route::get('/logoutadmin', 'adminController@logout');
+Route::get('/admin', 'adminController@admin')
+    ->middleware('userType')
+    ->name('userType');
 
-Route::get('/sair', 'LoginController@logout');
+Route::get('/produtoadmin', 'produtoController@cadastroProduto')
+    ->middleware('userType')
+    ->name('userType');
+    
+Route::post('/produtoadmin', 'produtoController@adicionarProduto')
+    ->middleware('userType')
+    ->name('userType');
+
+Route::get('/sucessocadastro', function(){
+    return view('admin/cadastrado');
+});
+
+Route::get('/admin/logout', 'adminController@logout')
+    ->middleware('userType')
+    ->name('userType');
+

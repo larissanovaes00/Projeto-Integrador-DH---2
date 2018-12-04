@@ -16,12 +16,32 @@
   
     <body>
 
-        <div class="container-fluid">
-
-
-        <h1>Olá,admin</h1>
+        <div class="container-fluid text-center">
         
+        <h1>Olá, {{ Auth::user()->name }}</h1>
+        <p class="lead">Bem vindo ao painel de administracao da Sense Cosméticos</p>
         
+        <h2>Selecione uma das ações abaixo</h2>
+
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="acoes col-4">
+                <label>Realize toda manuentação de <strong>produtos</strong> dentro da loja:</label>
+                <a class="btn btn-primary btn-block btn-lg" href="/produtoadmin" role="button">Produtos</a>
+                <label>Realize toda manuentação de <strong>clientes</strong> dentro da loja:</label>
+                <a class="btn btn-primary btn-block btn-lg" href="#" role="button">Clientes</a>
+            </div>
+            </div>
+            <div class="col-4">
+
+            </div>
+        
+        </div>
+
+        <div class="col-12 text-center sair-box">
+            <a href="/admin/logout" class="btn btn-danger btn-lg">Sair</a>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

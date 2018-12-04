@@ -15,9 +15,14 @@ class userType
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->tipoUsuario()){
+        if (!auth()->check()) {
+            return redirect('/acesso');
+        }
+        
+        if(auth()->user()->tipoUsuario() == 1) {
             return $next($request);
         }
-        return redirect('admin/dashboard/dashboard');
+
+        return redirect('home');
     }
 }

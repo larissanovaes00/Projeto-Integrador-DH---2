@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\pagsController;
 use App\Http\Controllers\SubcategoriaController;
 
-class HomeController extends Controller
+class detalheProdutoController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,18 +23,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function detalheProduto($id)
     {
         // Navegacao
         $navegacao = new SubcategoriaController();
         $categorias = $navegacao->getCategorias();
 
         // Popular DESTAQUES
-        $quatroProdutos = new pagsController();
-        $destaqueProdutos = $quatroProdutos->produtosDestaque();
-        
-        return view('home')
+        $detalheproduto = new pagsController();
+        $produto = $detalheproduto->detalheProduto($id);
+
+        return view('detalhe-produto')
             ->with('navbar', $categorias)
-            ->with('destaqueProdutos', $destaqueProdutos);
+            ->with('produto', $produto);
     }
 }
