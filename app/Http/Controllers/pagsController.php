@@ -72,4 +72,76 @@ class pagsController extends Controller
         // dd($request->session()->get('Carrinho'));
         return redirect('/home');
     }
+
+    public function getReduceByOne($id)
+    {
+        $oldCart = Session::has('Carrinho') ? Session::get('Carrinho') : null;
+        $cart = new Carrinho($oldCart);
+        $cart->reduceByOne($id);
+        // echo "<pre>";
+        // var_dump($cart);
+        // echo "</pre>";
+        // exit;
+
+        if(count($cart->items) > 0)
+        {
+            Session::put('Carrinho', $cart);
+        }
+        else 
+        {
+            Session::forget('Carrinho');
+        }
+
+        return redirect('/carrinho-de-compra');
+    }
+
+
+    public function getRemoveItem($id)
+    {
+        $oldCart = Session::has('Carrinho') ? Session::get('Carrinho') : null;
+        $cart = new Carrinho($oldCart);
+        $cart->removeItem($id);
+
+        if(count($cart->items) > 0)
+        {
+            Session::put('Carrinho', $cart);
+        }
+        else 
+        {
+            Session::forget('Carrinho');
+        }
+
+        return redirect('/carrinho-de-compra');
+    }
+
+    public function getCart()
+    {
+        if(!Session::has('Carrinho'))
+        {
+            return view('carrinho/carrinho-de-compra');
+        }
+
+        $oldCart = Session::get('Carrinho');
+        $cart = new Carrinho($oldCart);
+        $carrinho = array(
+            'produtos' => $cart->items,
+            'totalPrice' => $cart->totalPrice
+        );
+        return view('carrinho/carrinho-de-compra')
+            ->with('carrinho', $carrinho);
+    }
+
+    public function getCheckout()
+    {
+        if(!Session::has('Carrinho'))
+        {
+            return view('carrinho/carrinho-de-compra');
+        }
+
+        $oldCart = Session::get('Carrinho');
+        $cart = new Carrinho($oldCart);
+        $total = $cart->totalPrice;
+        return view('carrinho/checkout')
+            ->with('total', $total);
+    }
 }

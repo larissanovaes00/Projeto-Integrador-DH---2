@@ -57,6 +57,16 @@ Route::get('/produtos/{subcategoria}', 'pagsController@pesquisarSubcategoria');
 
 Route::get('/addCarrinho/{id}', 'pagsController@getAddCart');
 
+Route::get('/reduce/{id}', 'pagsController@getReduceByOne');
+
+Route::get('/remove/{id}', 'pagsController@getRemoveItem');
+
+Route::get('/carrinho-de-compra', 'pagsController@getCart');
+
+Route::get('/checkout', 'pagsController@getCheckout');
+
+Route::post('/checkout', 'pagsController@postCheckout');
+
 Auth::routes();
 
 Route::get('/admin', 'adminController@admin')
