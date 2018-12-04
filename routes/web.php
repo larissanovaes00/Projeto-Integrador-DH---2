@@ -53,6 +53,10 @@ Route::get('produto/{id}', 'detalheProdutoController@detalheProduto');
 
 Route::post('logout', 'LoginController@logout');
 
+Route::get('/produtos/{subcategoria}', 'pagsController@pesquisarSubcategoria');
+
+Route::get('/addCarrinho/{id}', 'pagsController@getAddCart');
+
 Auth::routes();
 
 Route::get('/admin', 'adminController@admin')

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Carrinho;
 use Illuminate\Http\Request;
+use Session;
 use App\Produto;
 use App\Marca;
 use App\Imagem;
@@ -51,10 +53,23 @@ class pagsController extends Controller
         return $produto;
     }
 
-    public function pesquisarSubcategoria($subcategoria)
+    public function pesquisarSubcategoria($id)
     {
-        $subcategoriaQuery = Produto::where('id_subcategoria', $subcategoria);
-
+        $subcategoriaQuery = Produto::where('id_subcategoria', $id)->get();
         
+        return view('teste/teste')
+            ->with('produtos', $subcategoriaQuery);
+    }
+
+    public function getAddCart(Request $request, $id)
+    {
+        $produto = Produto::find($id);
+        $oldCart = Session::has('Carrinho') ? Session::get('Carrinho') : null;
+        $cart = new Carrinho($oldCart);
+        $cart->addItem($produto, $produto->id_produto);
+
+        $request->session()->put('Carrinho', $cart);
+        // dd($request->session()->get('Carrinho'));
+        return redirect('/home');
     }
 }

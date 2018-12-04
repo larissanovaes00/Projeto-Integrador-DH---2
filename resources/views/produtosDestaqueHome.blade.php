@@ -21,7 +21,7 @@
                         <small class="text-muted"> 2X de {{$produto["parcelado"]}},00</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center btn-comprar">
-                        <button class="btn btn-info btn-lg btn-block">Comprar</button>
+                        <a class="btn btn-info btn-lg btn-block" href="/addCarrinho/{{$produto['idproduto']}}">Comprar</a>
                     </div>
                 </div>
             </div>

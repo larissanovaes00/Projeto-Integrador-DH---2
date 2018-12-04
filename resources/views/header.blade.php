@@ -11,7 +11,10 @@
 
         <!-- User controls -->
         <div class="user-controls col-12 col-md-6 col-lg-6 col-xl-6">
-            <a href="#"><i class="fas fa-shopping-bag fa-2x"></i></a>
+            <a href="#">
+                <i class="fas fa-shopping-bag fa-2x"></i>
+                <span class="badge badge-dark carrinho-bell">{{Session::has('Carrinho')?Session::get('Carrinho')->totalQty : ''}}</span>
+            </a>
             @guest
                 <a class="entrar" href="{{ route('login') }}">Entrar</a>
             @else

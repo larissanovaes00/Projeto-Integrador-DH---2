@@ -14,7 +14,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             @foreach($categoria["subcategorias"] as $subcategoria)
-            <a class="dropdown-item" href="#">{{$subcategoria["descricao"]}}</a>
+            <a class="dropdown-item" href="/produtos/{{$subcategoria['id']}}">{{$subcategoria["descricao"]}}</a>
             @endforeach
             </div>
         </li>
