@@ -83,8 +83,8 @@
                     </div>
                 </div>
             </div>
-            <div id="enviar-form">
-                <button class="btn btn-primary btn-block" type="submit">Cadastrar produto</button>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary btn-lg enviar-form" type="submit">Cadastrar produto</button>
             </div>
         </form>
 </div>

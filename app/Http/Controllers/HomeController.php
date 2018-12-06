@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\pagsController;
 use App\Http\Controllers\SubcategoriaController;
+use App\Http\Controllers\carrinhoController;
 
 class HomeController extends Controller
 {

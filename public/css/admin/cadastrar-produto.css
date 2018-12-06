@@ -21,8 +21,9 @@ body {
 .acoes {
   margin-top: 2.5em;
   padding-top: 25px;
-  border: 1px solid #212121;
   border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 20px #406466;
 }
 
 .acoes > a {
@@ -32,4 +33,9 @@ body {
 
 .sair-box {
   margin-top: 1em;
+}
+
+.enviar-form {
+  width: 50%;
+  margin-bottom: 1.5em;
 }

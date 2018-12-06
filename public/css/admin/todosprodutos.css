@@ -1,0 +1,21 @@
+.cabecalho {
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+.lista-produtos {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 5px 20px #406466;
+  margin-bottom: 1.5em;
+}
+
+.table > thead,
+th {
+  border-bottom: none !important;
+}
+
+.table th {
+  border-top: none !important;
+}

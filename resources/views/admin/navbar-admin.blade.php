@@ -5,14 +5,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Cadastrar novo produto <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="/produtoadmin">Cadastrar novo produto</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Produtos ativos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Produtos cadastrados</a>
+                <a class="nav-link" href="/todosprodutos">Todos os produtos da loja</a>
             </li>
         </ul>
     </div>

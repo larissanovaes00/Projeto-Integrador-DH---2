@@ -33,7 +33,6 @@
         <h1>Seu carrinho de compras</h1>
 
         @if(Session::has('Carrinho'))
-            @php(var_dump($carrinho));
             <div class="row">
                 <div class="col-12">
                     <ul class="list-group">

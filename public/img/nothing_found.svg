@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="204px" viewBox="0 0 204 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.678,32.095 C0.678,49.525 14.807,63.654 32.236,63.654 C49.666,63.654 63.795,49.525 63.795,32.095 C63.795,14.665 49.666,0.536 32.236,0.536 C14.807,0.536 0.678,14.665 0.678,32.095" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10" transform="translate(3.000000, 3.000000)">
+            <path d="M121.291,50.7162 L161.05,63.8282" id="Stroke-1" stroke="#B7C4C4" stroke-width="7" stroke-linecap="round"></path>
+            <path d="M36.6168,63.8704 L76.2378,50.3464" id="Stroke-2" stroke="#B7C4C4" stroke-width="7" stroke-linecap="round"></path>
+            <path d="M130.7953,115.7623 C130.7953,133.1913 116.6663,147.3213 99.2363,147.3213 C81.8073,147.3213 67.6773,133.1913 67.6773,115.7623 C67.6773,98.3333 81.8073,84.2033 99.2363,84.2033 C116.6663,84.2033 130.7953,98.3333 130.7953,115.7623" id="Fill-3" fill="#727A7A"></path>
+            <g id="Group-7" transform="translate(67.000000, 83.667000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-6"></g>
+                <path d="M54.0526,57.2549 C54.0526,69.3039 44.2856,79.0709 32.2366,79.0709 C20.1876,79.0709 10.4206,69.3039 10.4206,57.2549 C10.4206,45.2059 20.1876,35.4389 32.2366,35.4389 C44.2856,35.4389 54.0526,45.2059 54.0526,57.2549" id="Fill-5" fill="#B7C4C4" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M197.1667,98.8337 C197.1667,153.1417 153.1417,197.1667 98.8337,197.1667 C44.5257,197.1667 0.4997,153.1417 0.4997,98.8337 C0.4997,44.5257 44.5257,0.5007 98.8337,0.5007 C153.1417,0.5007 197.1667,44.5257 197.1667,98.8337 Z" id="Stroke-8" stroke="#B7C4C4" stroke-width="7" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

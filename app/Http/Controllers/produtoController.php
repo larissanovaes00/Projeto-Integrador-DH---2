@@ -73,4 +73,27 @@ class produtoController extends Controller
 
         return redirect('/sucessocadastro');
     }
+
+    public function todosprodutos()
+    {
+        $todosProdutos = Produto::orderBy('prod_nome')->paginate(10);
+
+        $produtosCompletos = array();
+
+        foreach($todosProdutos as $produtos)
+        {
+            $produtosCompletos[] = array(
+                'idproduto' => $produtos['id_produto'],
+                'nome' => $produtos["prod_nome"],
+                'preco' => $produtos["preco"],
+                'marca' => Marca::find($produtos["id_marca"]),
+                'descricao' => $produtos["prod_descricao"],
+                'mododeuso' => $produtos["modo_de_usar"],
+                'sku' => $produtos["codigo_sku"] 
+            );
+        }
+
+        return view('admin/todosprodutos')
+            ->with('todosProdutos', $produtosCompletos);
+    }
 }

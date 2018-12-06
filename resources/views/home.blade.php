@@ -16,6 +16,8 @@
 
         @include('produtosMaquiagem')
 
+         @include('slide-marcas')
+
         @include('footer')
 
         @include('bottom')

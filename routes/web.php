@@ -53,15 +53,15 @@ Route::get('produto/{id}', 'detalheProdutoController@detalheProduto');
 
 Route::post('logout', 'LoginController@logout');
 
-Route::get('/produtos/{subcategoria}', 'pagsController@pesquisarSubcategoria');
+Route::get('/produtos/{subcategoria}', 'pesquisarsubcategoriaController@index');
 
-Route::get('/addCarrinho/{id}', 'pagsController@getAddCart');
+Route::get('/addCarrinho/{id}', 'carrinhoController@getAddCart');
 
-Route::get('/reduce/{id}', 'pagsController@getReduceByOne');
+Route::get('/reduce/{id}', 'carrinhoController@getReduceByOne');
 
-Route::get('/remove/{id}', 'pagsController@getRemoveItem');
+Route::get('/remove/{id}', 'carrinhoController@getRemoveItem');
 
-Route::get('/carrinho-de-compra', 'pagsController@getCart');
+Route::get('/carrinho-de-compra', 'carrinhoController@getCart');
 
 Route::get('/checkout', 'pagsController@getCheckout');
 
@@ -78,6 +78,10 @@ Route::get('/produtoadmin', 'produtoController@cadastroProduto')
     ->name('userType');
     
 Route::post('/produtoadmin', 'produtoController@adicionarProduto')
+    ->middleware('userType')
+    ->name('userType');
+
+Route::get('/todosprodutos', 'produtoController@todosprodutos')
     ->middleware('userType')
     ->name('userType');
 
