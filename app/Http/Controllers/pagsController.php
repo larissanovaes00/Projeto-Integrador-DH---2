@@ -44,7 +44,7 @@ class pagsController extends Controller
         foreach($produtos as $produto)
         {
             $produtosGeral[] = array(
-                'idproduto' => $produto->id_produtos,
+                'idproduto' => $produto->id_produto,
                 'marca' => $produto->marca,
                 'nome' => $produto->prod_nome,
                 'preco' => $produto->preco,
