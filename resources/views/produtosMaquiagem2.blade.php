@@ -5,7 +5,7 @@
     <div class="row">  
 
 
-        @foreach($nossosProds as $produtos)
+        @foreach($nossosProdutos as $produtos)
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
             <div class="card box-shadow">
                 <a href="produto/{{$produtos['idproduto']}}">

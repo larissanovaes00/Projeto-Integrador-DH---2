@@ -36,10 +36,31 @@
         <script src="<?php echo asset ('bootstrap/js/bootstrap.min.js'); ?>" > </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="<?php echo asset ('owlcarousel/owl.carousel.min.js'); ?>" > </script>
         <script src="<?php echo asset ('js/slide-marcas.js'); ?>" > </script>
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="<?php echo asset ('owlcarousel/owl.carousel.min.js'); ?>" > </script>
+        <script>
+            $(document).ready(function() {
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: false,
+                    responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                    }
+                });
+            });
+
+        </script>
     </body>
 
 </html>

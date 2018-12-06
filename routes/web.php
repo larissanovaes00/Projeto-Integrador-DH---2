@@ -85,6 +85,14 @@ Route::get('/todosprodutos', 'produtoController@todosprodutos')
     ->middleware('userType')
     ->name('userType');
 
+Route::get('/editarformulario/{id}', 'produtoController@editarFormulario')
+    ->middleware('userType')
+    ->name('userType');
+
+Route::put('/editarformulario/{id}', 'produtoController@editarProduto')
+    ->middleware('userType')
+    ->name('userType');
+
 Route::get('/sucessocadastro', function(){
     return view('admin/cadastrado');
 });

@@ -4,11 +4,13 @@
 }
 
 .lista-produtos {
+  min-width: 75%;
+  min-height: 634px;
   background-color: #fff;
   padding: 2em;
   border-radius: 1em;
   box-shadow: 0px 5px 20px #406466;
-  margin-bottom: 1.5em;
+  margin: 0 auto;
 }
 
 .table > thead,
@@ -18,4 +20,9 @@ th {
 
 .table th {
   border-top: none !important;
+}
+
+.pagination {
+  margin: 2.5em 0;
+  justify-content: center;
 }

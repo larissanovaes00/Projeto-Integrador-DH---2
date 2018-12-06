@@ -16,7 +16,9 @@
 
         @include('produtosMaquiagem')
 
-         @include('slide-marcas')
+        @include('slide-marcas')
+
+        @include('produtosMaquiagem2')
 
         @include('footer')
 

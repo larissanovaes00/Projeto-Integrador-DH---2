@@ -35,6 +35,28 @@ class pagsController extends Controller
         return $pagProdutos;
     }
 
+    public function produtosGeral($id)
+    {
+        $produtos = Produto::where('type', $id)->get();
+
+        $produtosGeral = array();
+
+        foreach($produtos as $produto)
+        {
+            $produtosGeral[] = array(
+                'idproduto' => $produto->id_produtos,
+                'marca' => $produto->marca,
+                'nome' => $produto->prod_nome,
+                'preco' => $produto->preco,
+                'preco_antigo' => $produto->preco + 20,
+                'parcelado' => $produto->preco / 2,
+                'imagens' => $produto->imagens->all()
+            );
+        }
+        
+        return $produtosGeral;
+    }
+
     public function detalheProduto($id)
     {
         $produtoQuery = Produto::where('id_produto', $id)->first();
@@ -90,4 +112,6 @@ class pagsController extends Controller
         return view('carrinho/checkout')
             ->with('total', $total);
     }
+
+
 }

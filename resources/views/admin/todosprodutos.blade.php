@@ -28,14 +28,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($todosProdutos as $produto)
+                            @foreach($todosProdutos as $item)
                                 <tr>
-                                <th scope="row">{{$produto['idproduto']}}</th>
-                                <td>{{$produto['nome']}}</td>
-                                <td>{{$produto['marca']['marca']}}</td>
-                                <td>{{$produto['preco']}}</td>
-                                <td>{{$produto['sku']}}</td>
-                                <td><button class="btn btn-dark">Editar produto</button></td>
+                                <th scope="row">{{$item['idproduto']}}</th>
+                                <td>{{$item['nome']}}</td>
+                                <td>{{$item['marca']['marca']}}</td>
+                                <td>{{$item['preco']}}</td>
+                                <td>{{$item['sku']}}</td>
+                                <td><a href="/editarformulario/{{$item['idproduto']}}" class="btn btn-dark">Editar produto</a></td>
                                 <td><button class="btn btn-danger">Excluir produto</button></td>
                                 </tr>
                             @endforeach
@@ -43,6 +43,7 @@
                     </table>
                 </div>
             </div>
+            {{$paginas}}
     </div>
 
         @include('admin/footer-admin')

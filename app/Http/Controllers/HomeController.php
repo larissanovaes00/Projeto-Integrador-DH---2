@@ -33,9 +33,13 @@ class HomeController extends Controller
         // Popular DESTAQUES
         $quatroProdutos = new pagsController();
         $destaqueProdutos = $quatroProdutos->produtosDestaque();
+        $nossosProdutos = $quatroProdutos->produtosGeral(0);
+        $produtosGeralDois = $quatroProdutos->produtosGeral(2);
         
         return view('home')
             ->with('navbar', $categorias)
-            ->with('destaqueProdutos', $destaqueProdutos);
+            ->with('destaqueProdutos', $destaqueProdutos)
+            ->with('nossosProds', $nossosProdutos)
+            ->with('nossosProdutos', $produtosGeralDois);
     }
 }

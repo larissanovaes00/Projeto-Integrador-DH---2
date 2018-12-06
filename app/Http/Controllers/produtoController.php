@@ -19,7 +19,6 @@ class produtoController extends Controller
 
         $marcas = Marca::all();
         
-
         return view('admin/cadastrar-produto')
             ->with('categorias', $categorias)
             ->with('marcas', $marcas);
@@ -36,6 +35,8 @@ class produtoController extends Controller
             'codigo_sku' => $request->input('product-sku'),
             'modo_de_usar' => $request->input('how-to-use')
         ]);
+
+        // dd($produto);
         
         $abcd = array(
             'A', 'B', 'C', 'D'
@@ -76,8 +77,7 @@ class produtoController extends Controller
 
     public function todosprodutos()
     {
-        $todosProdutos = Produto::orderBy('prod_nome')->paginate(10);
-
+        $todosProdutos = Produto::orderBy('prod_nome')->paginate(8);
         $produtosCompletos = array();
 
         foreach($todosProdutos as $produtos)
@@ -93,7 +93,41 @@ class produtoController extends Controller
             );
         }
 
+        $paginas = $todosProdutos->links();
+
         return view('admin/todosprodutos')
+            ->with('paginas', $paginas)
             ->with('todosProdutos', $produtosCompletos);
+    }
+
+    public function editarFormulario($id)
+    {
+        $produto = Produto::find($id);
+
+        $marcas = Marca::all();
+
+        $subcategoriaController = new SubcategoriaController();
+        $categorias = $subcategoriaController->getCategorias();
+        
+        return view('admin/formulario-editar')
+            ->with('marcas', $marcas)
+            ->with('categorias', $categorias)
+            ->with('produto', $produto);
+    }
+
+    public function editarProduto(Request $request, $id)
+    {
+        $produto = Produto::find($id);
+        $produto["prod_nome"] = $request->input('product-name');
+        $produto["preco"] = $request->input('product-price');
+        $produto["prod_descricao"] = $request->input('product-description');
+        $produto["id_marca"] = $request->input('id_marca');
+        $produto["id_subcategoria"] = $request->input('id_subcategoria');
+        $produto["codigo_sku"] = $request->input('product-sku');
+        $produto["modo_de_usar"] = $request->input('how-to-use');
+
+        $produto->save();
+
+        return redirect('/todosprodutos');
     }
 }

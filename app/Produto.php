@@ -13,7 +13,7 @@ class Produto extends Model
     protected $guarded = array(
         'id_produto'
     );
-
+    
     public function marca()
     {
         return $this->hasMany(Marca::class, 'id_marca', 'id_marca');
