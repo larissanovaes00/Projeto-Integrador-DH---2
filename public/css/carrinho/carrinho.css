@@ -1,0 +1,14 @@
+.header-carrinho {
+  background-color: #045b5b;
+  color: #efefef;
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.corpo-carrinho {
+  padding: 2em 0;
+}
+
+.btns-carrinho {
+  float: right;
+}

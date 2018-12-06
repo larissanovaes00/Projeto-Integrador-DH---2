@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="<?php echo asset('css/navbar.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/banner.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/como-comprar.css');?>" />
+        <link rel="stylesheet" href="<?php echo asset('css/carrinho/carrinho.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/vitrine.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/novidades.css');?>" />
         <link rel="stylesheet" href="<?php echo asset('css/footer.css');?>" />
@@ -27,37 +28,42 @@
     <body>
 
         <div id="app">
+        @include('header')
 
-        <div class="container-fluid">
-
-        <h1>Seu carrinho de compras</h1>
+        <div class="container-fluid carrinho-container">
+            <div class="row">
+                <div class="header-carrinho col-12">
+                <h1>Seu carrinho de compras</h1>
+            </div>
+        </div>
 
         @if(Session::has('Carrinho'))
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 corpo-carrinho">
+                    <h4 class="text-muted">Seu carrinho tem {{$carrinho["totalQty"]}} produtos</h4>
                     <ul class="list-group">
                         @foreach($carrinho["produtos"] as $elemento)
-                            <li class="list-group-item">
-                                <span class="badge badge-primary">Quantidade: {{$elemento["qty"]}}</span>
-                                <span class="badge badge-success">Preço unitário: {{$elemento["item"]["preco"]}}</span>
-                                <strong>{{$elemento["item"]["prod_nome"]}}</strong>
-                                <a href="/reduce/{{$elemento['item']['id_produto']}}" class="btn btn-secondary">Tirar um {{$elemento["item"]["prod_nome"]}}</a>
-                                <a href="/remove/{{$elemento['item']['id_produto']}}" class="btn btn-danger">Remover todos</a>
+                            <li class="list-group-item dados-produtos">
+                                <h4>{{$elemento["item"]["prod_nome"]}}</h4>
+                                <h5>Quantidade: {{$elemento["qty"]}}</h5>
+                                <h6>Preço unitário: {{$elemento["item"]["preco"]}}</h6>
+                                <hr>
+                                <div class="btns-carrinho">
+                                <a href="/reduce/{{$elemento['item']['id_produto']}}" class="btn btn-outline-secondary">Tirar um {{$elemento["item"]["prod_nome"]}}</a>
+                                <a href="/remove/{{$elemento['item']['id_produto']}}" class="btn btn-outline-danger">Remover todos</a>
+                                </div>
                             </li>
                         @endforeach
                     </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h3><strong>Total: {{$carrinho["totalPrice"]}}</strong></h3>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="col-12">
+                        <h3><strong>Total: {{$carrinho["totalPrice"]}}</strong></h3>
+                    </div>
+                    <div class="col-12">
                     <a href="/checkout" class="btn btn-success">Checkout</a>
                 </div>
+                <hr>
             </div>
         @else
             <div class="row">
@@ -71,6 +77,8 @@
         </div>
 
         </div>
+        @include('bottom')
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

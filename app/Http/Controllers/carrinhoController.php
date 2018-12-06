@@ -33,7 +33,8 @@ class carrinhoController extends Controller
         $cart = new Carrinho($oldCart);
         $carrinho = array(
             'produtos' => $cart->items,
-            'totalPrice' => $cart->totalPrice
+            'totalPrice' => $cart->totalPrice,
+            'totalQty' => $cart->totalQty
         );
         return view('carrinho/carrinho-de-compra')
             ->with('carrinho', $carrinho);

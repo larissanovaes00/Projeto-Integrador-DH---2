@@ -7,7 +7,7 @@
 
         <!-- User controls -->
         <div class="user-controls col-12 col-md-6 col-lg-6 col-xl-6">
-            <button class="btn btn-outline-light">Olá, {{ Auth::user()->name }}</button>
+            <a href="/profile" class="btn btn-outline-light">Olá, {{ Auth::user()->name }}</a>
             <a href="/admin/logout" class="btn btn-danger">Sair</a>
         </div>
         

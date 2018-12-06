@@ -51,7 +51,7 @@ Route::get('/home', 'HomeController@index')
 
 Route::get('produto/{id}', 'detalheProdutoController@detalheProduto');
 
-Route::post('logout', 'LoginController@logout');
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/produtos/{subcategoria}', 'pesquisarsubcategoriaController@index');
 

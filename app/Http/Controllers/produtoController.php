@@ -130,4 +130,9 @@ class produtoController extends Controller
 
         return redirect('/todosprodutos');
     }
+
+    public function removerProduto($id)
+    {
+        
+    }
 }
