@@ -93,6 +93,10 @@ Route::put('/editarformulario/{id}', 'produtoController@editarProduto')
     ->middleware('userType')
     ->name('userType');
 
+Route::get('/remover/{id}', 'produtoController@removerProduto')
+    ->middleware('userType')
+    ->name('userType');
+
 Route::get('/sucessocadastro', function(){
     return view('admin/cadastrado');
 });

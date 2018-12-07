@@ -77,7 +77,7 @@ class produtoController extends Controller
 
     public function todosprodutos()
     {
-        $todosProdutos = Produto::orderBy('prod_nome')->paginate(8);
+        $todosProdutos = Produto::orderBy('id_produto')->paginate(8);
         $produtosCompletos = array();
 
         foreach($todosProdutos as $produtos)
@@ -133,6 +133,10 @@ class produtoController extends Controller
 
     public function removerProduto($id)
     {
-        
+        $produto = Produto::find($id);
+
+        $produto->delete();
+
+        return redirect('/todosprodutos');
     }
 }

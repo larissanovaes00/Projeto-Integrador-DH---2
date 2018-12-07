@@ -36,7 +36,7 @@
                                 <td>{{$item['preco']}}</td>
                                 <td>{{$item['sku']}}</td>
                                 <td><a href="/editarformulario/{{$item['idproduto']}}" class="btn btn-dark">Editar produto</a></td>
-                                <td><button class="btn btn-danger">Excluir produto</button></td>
+                                <td><a href="/remover/{{$item['idproduto']}}" class="btn btn-danger">Excluir produto</a></td>
                                 </tr>
                             @endforeach
                         </tbody>

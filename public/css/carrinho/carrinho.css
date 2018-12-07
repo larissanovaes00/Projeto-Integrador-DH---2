@@ -5,10 +5,29 @@
   text-align: center;
 }
 
-.corpo-carrinho {
+.corpo-carrinho,
+.valor-total {
   padding: 2em 0;
 }
 
 .btns-carrinho {
   float: right;
+}
+
+.list-group-item {
+  border: 2px solid #009fae !important;
+}
+
+/* .valor-total {
+  text-align: center;
+} */
+
+.infos-total > h5 {
+  margin-bottom: 0;
+}
+
+.numero-total {
+  font-size: 3em !important;
+  font-weight: 300;
+  color: #212121 !important;
 }

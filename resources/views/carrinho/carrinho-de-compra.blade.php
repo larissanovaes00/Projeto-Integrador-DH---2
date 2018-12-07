@@ -39,7 +39,7 @@
 
         @if(Session::has('Carrinho'))
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 corpo-carrinho">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 corpo-carrinho">
                     <h4 class="text-muted">Seu carrinho tem {{$carrinho["totalQty"]}} produtos</h4>
                     <ul class="list-group">
                         @foreach($carrinho["produtos"] as $elemento)
@@ -49,6 +49,7 @@
                                 <h6>Preço unitário: {{$elemento["item"]["preco"]}}</h6>
                                 <hr>
                                 <div class="btns-carrinho">
+                                <h5>Ações:</h5>
                                 <a href="/reduce/{{$elemento['item']['id_produto']}}" class="btn btn-outline-secondary">Tirar um {{$elemento["item"]["prod_nome"]}}</a>
                                 <a href="/remove/{{$elemento['item']['id_produto']}}" class="btn btn-outline-danger">Remover todos</a>
                                 </div>
@@ -56,14 +57,16 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <div class="col-12">
-                        <h3><strong>Total: {{$carrinho["totalPrice"]}}</strong></h3>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3 valor-total">
+                    <div class="col-12 infos-total">
+                        <h5 class="text-muted">Total:</h5>
+                        <h3 class="numero-total"><strong>R${{$carrinho["totalPrice"]}}</strong></h3>
                     </div>
                     <div class="col-12">
-                    <a href="/checkout" class="btn btn-success">Checkout</a>
+                    <a href="/checkout" class="btn btn-info btn-lg btn-block">Finalizar Compra</a>
+                    <a href="/home" class="btn btn-outline-dark btn-lg btn-block">Continuar comprando</a>
+
                 </div>
-                <hr>
             </div>
         @else
             <div class="row">
@@ -73,7 +76,6 @@
                 </div>
             </div>
         @endif
-        
         </div>
 
         </div>

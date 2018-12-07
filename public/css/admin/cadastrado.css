@@ -1,0 +1,22 @@
+body {
+  background-image: linear-gradient(
+    to right top,
+    #00878c,
+    #008d94,
+    #00939d,
+    #0099a5,
+    #009fae
+  );
+}
+
+.sucesso {
+  margin-top: 20%;
+}
+
+.sucesso > img {
+  margin-bottom: 1.5em;
+}
+
+.logotipo-sense {
+  width: 250px;
+}
