@@ -103,15 +103,18 @@ class produtoController extends Controller
     public function editarFormulario($id)
     {
         $produto = Produto::find($id);
-
+        
         $marcas = Marca::all();
 
         $subcategoriaController = new SubcategoriaController();
         $categorias = $subcategoriaController->getCategorias();
+
+        $imagens = $produto->imagens->all();
         
         return view('admin/formulario-editar')
             ->with('marcas', $marcas)
             ->with('categorias', $categorias)
+            ->with('imagens', $imagens)
             ->with('produto', $produto);
     }
 
@@ -127,6 +130,40 @@ class produtoController extends Controller
         $produto["modo_de_usar"] = $request->input('how-to-use');
 
         $produto->save();
+        
+        $abcd = array(
+            'A', 'B', 'C', 'D'
+        );
+
+        foreach($abcd as $a)
+        {
+            if($request->hasFile('product-pic'.$a) && $request->file('product-pic'.$a)->isValid())
+            {
+
+                $name = uniqId(date('HisYmd'));
+
+                $extension = $request->file('product-pic'.$a)->extension();
+
+                $nameFile = $name.".".$extension;
+
+                $upload = $request->file('product-pic'.$a)->storeAs('produtos', $nameFile, 'public');
+
+                $originalName = $request->file('product-pic'.$a)->getClientOriginalName();
+
+                if($upload)
+                {
+                    $imagem = Imagem::create([
+                        'caminho_imagem' => $nameFile,
+                        'nome_original' => $originalName
+                    ]);
+
+                    $produto_imagem = Produto_imagem::create([
+                        'id_produto' => $produto->id_produto,
+                        'id_imagem' => $imagem->id_imagem
+                    ]);
+                }
+            }
+        }
 
         return redirect('/todosprodutos');
     }
@@ -138,5 +175,16 @@ class produtoController extends Controller
         $produto->delete();
 
         return redirect('/todosprodutos');
+    }
+
+    public function removerImagem($id)
+    {
+        $imagem = Imagem::find($id);
+
+        $imagem->delete();
+
+        return response()->json([
+            'ok' => 1
+        ]);
     }
 }

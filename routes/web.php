@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/home');
 });
 
 Route::get('/vitrine', function () {
@@ -38,8 +38,6 @@ Route::get('/acesso', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
-
-
 
 Route::get('/testeprodutos', 'pagsController@produtosDestaque');
 
@@ -94,6 +92,14 @@ Route::put('/editarformulario/{id}', 'produtoController@editarProduto')
     ->name('userType');
 
 Route::get('/remover/{id}', 'produtoController@removerProduto')
+    ->middleware('userType')
+    ->name('userType');
+
+Route::get('/removerimagem/{id}', 'produtoController@removerImagem')
+    ->middleware('userType')
+    ->name('userType');
+
+Route::post('/substituirimagem/{id}', 'produtoController@substituirImagem')
     ->middleware('userType')
     ->name('userType');
 

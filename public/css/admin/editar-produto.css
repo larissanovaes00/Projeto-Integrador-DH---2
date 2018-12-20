@@ -1,0 +1,31 @@
+label.myLabel input[type="file"] {
+  position: absolute;
+  top: -1000px;
+  display: none;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  padding: 2px 5px;
+  margin: 2px;
+  background: #ddd;
+  display: inline-block;
+}
+.myLabel:hover {
+  background: #ccc;
+}
+.myLabel:active {
+  background: #ccf;
+}
+.myLabel :invalid + span {
+  color: #a44;
+}
+.myLabel :valid + span {
+  color: #4a4;
+}
+
+.img-cnt-add {
+  display: none;
+}

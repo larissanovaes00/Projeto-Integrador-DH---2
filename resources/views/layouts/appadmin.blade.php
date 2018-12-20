@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Cadastrar produto</title>
+        <link rel="stylesheet" href="<?php echo asset('css/admin/editar-produto.css');?>">
         <link rel="stylesheet" href="<?php echo asset('css/admin/general.css');?>">
         <link rel="stylesheet" href="<?php echo asset('css/admin/header-admin.css');?>">
         <link rel="stylesheet" href="<?php echo asset('css/admin/navbar-admin.css');?>">
@@ -23,6 +24,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="<?php echo asset ('bootstrap/js/bootstrap.min.js'); ?>" > </script>
+    <script src="<?php echo asset ('js/editarProduto.js'); ?>" > </script>
 
     </body>
 

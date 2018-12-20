@@ -1,0 +1,32 @@
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+0,cc4e06+100 */
+  background: rgb(73, 73, 73); /* Old browsers */
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(73, 73, 73, 1) 0%,
+    rgba(204, 78, 6, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(73, 73, 73, 1) 0%,
+    rgba(204, 78, 6, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    45deg,
+    rgba(73, 73, 73, 1) 0%,
+    rgba(204, 78, 6, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#cc4e06',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.sucesso {
+  margin-top: 20%;
+}
+
+.sucesso > img {
+  margin-bottom: 1.5em;
+}
+
+.logotipo-sense {
+  width: 250px;
+}

@@ -16,7 +16,7 @@
                     <h6>{{$produto["nome"]}}</h6>
                     <div class="infos-precos">
                         <small class="text-muted preco-antigo">R${{$produto["preco_antigo"]}}</small>
-                        <h4 id="preco">{{$produto["preco"]}}</h4>
+                        <h4 id="preco">R${{$produto["preco"]}}</h4>
                         <small class="text-muted"> 2X de {{$produto["parcelado"]}},00</small>
                     </div>
                     <div class="d-flex justify-content-between align-items-center btn-comprar">

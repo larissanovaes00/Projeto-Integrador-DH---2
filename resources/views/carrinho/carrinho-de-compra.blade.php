@@ -40,6 +40,11 @@
         @if(Session::has('Carrinho'))
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9 corpo-carrinho">
+                    <?php
+                        echo "<pre>";
+                        print_r($carrinho);
+                        echo "</pre>";
+                    ?>
                     <h4 class="text-muted">Seu carrinho tem {{$carrinho["totalQty"]}} produtos</h4>
                     <ul class="list-group">
                         @foreach($carrinho["produtos"] as $elemento)
@@ -71,6 +76,7 @@
         @else
             <div class="row">
                 <div class="col-12">
+                    <i class="far fa-frown fa-5x"></i>
                     <h2>Seu carrinho está vazio =(</h2>
                     <small><a href="/home">Adicionar itens ao carrinho</a></small>
                 </div>

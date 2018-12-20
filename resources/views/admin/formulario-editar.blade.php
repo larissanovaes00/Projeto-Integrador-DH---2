@@ -81,6 +81,40 @@
                                 <input type="text" name="product-sku" class="form-control" id="productSku"placeholder="Digite o código ou SKU do produto" value="{{$produto['codigo_sku']}}">
                             </div>
                         </div>
+
+                        <div class="aditional-infos col-lg-12 col-xl-12">
+                            <div class="header-infos">
+                                <h3>Imagens do produto</h3>
+                                <small>Imagens ativas do produto</small>
+                            </div>
+
+                            <div class="row">
+                            `   @php($cntImg = 0)
+                                @foreach($imagens as $imagem)
+                                <div class="col-3">
+                                    <div class="img-cnt">
+                                        <img class="card-img-top img-fluid mb-3"  alt="Thumbnail [100%x225]" style="height: 200px; width: 200px; display: block; margin: 0 auto;" src="{{ asset("storage/produtos/{$imagem['caminho_imagem']}") }}" alt="">
+                                        <a href="/removerimagem/{{$imagem['id_imagem']}}" class="btn btn-danger btn-block btn-delete">Excluir imagem</a>
+                                    </div>
+                                    <div class="img-cnt-add">
+                                        <label class="myLabel">
+                                            <input type="file" name="product-pic<?php echo chr(65+$cntImg)?>"/>
+                                            <span>Adicionar imagem</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                @php($cntImg++)
+                                @endforeach
+                                @for($i = $cntImg; $i < 4; $i++)
+                                    <div>
+                                        <label class="myLabel">
+                                            <input type="file" name="product-pic<?php echo chr(65+$i)?>"/>
+                                            <span>Adicionar imagem</span>
+                                        </label>
+                                    </div>
+                                @endfor
+                            </div>
+                        </div>
                         
                     </div>
                     <div class="col-12 text-center">
@@ -92,3 +126,4 @@
         @include('admin/footer-admin')
 
 @endsection
+

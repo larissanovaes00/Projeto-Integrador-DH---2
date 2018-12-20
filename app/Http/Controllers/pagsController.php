@@ -80,7 +80,6 @@ class pagsController extends Controller
     {
         $subcategoriaQuery = Produto::where('id_subcategoria', $id)->get();
 
-
         $pagProdutos = array();
 
         foreach($subcategoriaQuery as $produto)

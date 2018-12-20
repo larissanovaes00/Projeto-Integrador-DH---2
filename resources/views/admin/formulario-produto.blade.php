@@ -64,21 +64,25 @@
                         <h3>Imagens do produto</h3>
                     </div>
                     <div class="row">
-                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6">
-                            <label for="product-picA">Imagem do produto A</label>
-                            <input type="file" class="form-control-file" id="product-picA" name="product-picA">
+                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6 fileUpload">
+                            <i class="far fa-image fa-3x icone-imagem"></i>
+                            <label for="product-picA">Adicionar imagem</label>
+                            <input type="file" class="form-control-file upload" id="product-picA" name="product-picA">
                         </div>
-                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6">
-                            <label for="product-picB">Imagem do produto B</label>
-                            <input type="file" class="form-control-file" id="product-picB" name="product-picB">
+                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6 fileUpload">
+                            <i class="far fa-image fa-3x icone-imagem"></i>
+                            <label for="product-picB">Adicionar imagem</label>
+                            <input type="file" class="form-control-file upload" id="product-picB" name="product-picB">
                         </div>
-                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6">
-                            <label for="product-picC">Imagem do produto C</label>
-                            <input type="file" class="form-control-file" id="product-picC" name="product-picC">
+                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6 fileUpload">
+                            <i class="far fa-image fa-3x icone-imagem"></i>
+                            <label for="product-picC">Adicionar imagem</label>
+                            <input type="file" class="form-control-file upload" id="product-picC" name="product-picC">
                         </div>
-                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6">
-                            <label for="product-picD">Imagem do produto D</label>
-                            <input type="file" class="form-control-file" id="product-picD" name="product-picD">
+                        <div class="form-group col-12 col-sm-6 col-lg-6 col-xl-6 fileUpload">
+                            <i class="far fa-image fa-3x icone-imagem"></i>
+                            <label for="product-picD">Adicionar imagem</label>
+                            <input type="file" class="form-control-file upload" id="product-picD" name="product-picD">
                         </div>
                     </div>
                 </div>
